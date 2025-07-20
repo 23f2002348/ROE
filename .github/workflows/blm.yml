@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install playwright
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
 
       - name: Scrape table sums and print total (23f2002348@ds.study.iitm.ac.in)
         run: node scrp.js
